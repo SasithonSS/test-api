@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest  # Run on Ubuntu
 
     steps:
-        - run: "curl 'https://app.appsmith.com/api/v1/consolidated-api/view?defaultPageId=680b059710cbba0b4650240f&branchName=master' -H 'X-XSRF-TOKEN: f17c04fd-81ab-4880-80f4-7cb10f93e843'"
-      # - run: "curl -f --location --request POST https://app.appsmith.com/api/v1/git/deploy/app/test-api/page1-680b059710cbba0b4650240f?branch=master --header 'X-XSRF-TOKEN: f17c04fd-81ab-4880-80f4-7cb10f93e843'" 
+        # - run: "curl 'https://app.appsmith.com/api/v1/consolidated-api/view?defaultPageId=680b059710cbba0b4650240f&branchName=master' -H 'X-XSRF-TOKEN: f17c04fd-81ab-4880-80f4-7cb10f93e843'"
+        - run: "curl -f --location --request POST https://app.appsmith.com/api/v1/git/deploy/app/test-api/page1-680b059710cbba0b4650240f?branchName=master -H 'X-XSRF-TOKEN: f17c04fd-81ab-4880-80f4-7cb10f93e843'" 
       # - run: "curl -f --location --request POST 'https://app.appsmith.com/api/v1/git/deploy/app/test-api/page1-680b059710cbba0b4650240f?branch=master' -H 'sec-ch-ua-platform: 'Windows'' -H 'X-XSRF-TOKEN: f17c04fd-81ab-4880-80f4-7cb10f93e843' -H 'X-Appsmith-Version: v1.69.0-SNAPSHOT' -H 'Referer: https://app.appsmith.com/app/test-api/page1-680b059710cbba0b4650240f/edit' -H 'sec-ch-ua: 'Google Chrome';v='135', 'Not-A.Brand';v='8', 'Chromium';v='135'' -H 'sec-ch-ua-mobile: ?0' -H 'timer: 6238.699999988079' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' -H 'Accept: application/json, text/plain, */*' -H 'x-anonymous-user-id: 526faab1-68e2-4c39-bed2-3a400d43b54b'"
       # - run: "curl -f --location --request POST https://app.appsmith.com/api/v1/git/deploy/app/65f14c735?branchName=master --header 'Authorization: Bearer <bearer token>'"
